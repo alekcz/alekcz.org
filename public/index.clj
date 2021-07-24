@@ -34,6 +34,7 @@
                           :text-align "left" 
                           :width "300px"}])
           (css [:strong { :font-size "13px"}])
+          (css [:a { :color "#D21323"}])
           (css [:code   { :font-size "12px" 
                           :font-weight "normal"}])]]
       [:body 
@@ -42,6 +43,6 @@
               }
               [:img {:src "/alexander-round.png" :width "200px" :height "200px"}]
               [:h1 "I write code."]
-              [:p "Catch me on GitHub: " [:a {:href "https://github.com/alekcz"} "@alekcz"]]]]]))
+              [:p "Catch me on: " [:br] [:a {:href "https://github.com/alekcz"} "github/alekcz"] " or " [:a {:href "https://twitter.com/alekcz"} "twitter/alekcz"]]]]]))
 
 (pcp/response 200 (resp) "text/html")            
